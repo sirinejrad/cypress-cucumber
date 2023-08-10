@@ -9,6 +9,6 @@ module.exports = defineConfig({
     },
     specPattern: "**/*.feature"
   },
-  url:'http://localhost:8080/api/v1/'
+  url:'http://localhost:8081/api/v1/'
 
 });
