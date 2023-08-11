@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "gestion de messagerie",
+    "line": 1,
+    "id": "gestion-de-messagerie",
+    "tags": [],
+    "uri": "cucumber.feature",
+    "elements": [
+      {
+        "id": "gestion-de-messagerie;test-api-register-email",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Test API register email",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "test",
+            "result": {
+              "status": "passed",
+              "duration": 126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "créer un compte",
+            "result": {
+              "status": "passed",
+              "duration": 154000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
