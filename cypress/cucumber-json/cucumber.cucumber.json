@@ -1,38 +1,52 @@
 [
   {
     "keyword": "Feature",
-    "name": "gestion de messagerie",
-    "line": 1,
-    "id": "gestion-de-messagerie",
-    "tags": [],
+    "name": "release 1",
+    "line": 2,
+    "id": "release-1",
+    "tags": [
+      {
+        "name": "@MYP-8",
+        "line": 1
+      }
+    ],
     "uri": "cucumber.feature",
     "elements": [
       {
-        "id": "gestion-de-messagerie;test-api-register-email",
+        "id": "release-1;test-api-register-email",
         "keyword": "Scenario",
-        "line": 2,
+        "line": 5,
         "name": "Test API register email",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@MYP-8",
+            "line": 1
+          },
+          {
+            "name": "@TEST_MYP-7",
+            "line": 4
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 3,
+            "line": 6,
             "name": "test",
             "result": {
               "status": "passed",
-              "duration": 126000000
+              "duration": 298000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 4,
+            "line": 7,
             "name": "créer un compte",
             "result": {
               "status": "passed",
-              "duration": 154000000
+              "duration": 386000000
             }
           }
         ]
