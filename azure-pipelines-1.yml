@@ -15,9 +15,9 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- script: 
+- script: |
     npm install  
-    node_modules\.bin\cypress run
+    npx cypress run
   
   displayName: 'npm install and cypress run'
  
