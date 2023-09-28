@@ -1,4 +1,5 @@
 # Starter pipeline
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -11,13 +12,25 @@ pool:
 
 
 steps:
-- task: NodeTool@0
+
+- task: SSH@0
   inputs:
-    versionSpec: '8.x'
-  displayName: 'Install Node.js'
+    runOptions: 'commands'
+    commands: 'git@github.com:sirinejrad/cypress-cucumber.git'
+    readyTimeout: '20000'
+
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.     
+      npm install  
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: 'npx cypress run'
 
 - script: |
     npm install
-    npm run build
-    npm test
-  displayName: 'npm install, build, and test'
+    npx cypress run
+  displayName: 'npm install, and npx cypress run'
