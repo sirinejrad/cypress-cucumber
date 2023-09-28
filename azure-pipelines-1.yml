@@ -20,6 +20,6 @@ steps:
   displayName: 'npm install and cypress run'  
 - task: CmdLine@2
   inputs:
-    script: 'npx cypress run'
+    script: 'npx cypress run -p 3200'
  
  
