@@ -17,7 +17,9 @@ steps:
 
 - script: |
     npm install  
-    npx cypress run
-  
-  displayName: 'npm install and cypress run'
+  displayName: 'npm install and cypress run'  
+- task: CmdLine@2
+  inputs:
+    script: 'npx cypress run'
+ 
  
