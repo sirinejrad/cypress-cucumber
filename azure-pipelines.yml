@@ -8,7 +8,7 @@ trigger:
 
 pool:
   vmImage: windows-latest
-  name: asus
+
 
 steps:
 - task: NodeTool@0
