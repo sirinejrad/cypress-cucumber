@@ -1,5 +1,6 @@
 # Starter pipeline
 
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -13,12 +14,11 @@ pool:
 
 steps:
 
-- task: SSH@0
+- task: AzureCLI@2
   inputs:
-    runOptions: 'commands'
-    commands: 'git@github.com:sirinejrad/cypress-cucumber.git'
-    readyTimeout: '20000'
-
+    scriptType: 'ps'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'clone https://github.com/sirinejrad/cypress-cucumber'
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
