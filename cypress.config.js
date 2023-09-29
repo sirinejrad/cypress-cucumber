@@ -7,8 +7,10 @@ module.exports = defineConfig({
       // implement node event listeners here
       on("file:preprocessor", cucumber());
     },
-    specPattern: "**/*.feature"
+    specPattern: "**/*.feature",
+
   },
+  port: 2300,
   url:'http://192.168.1.122:8081/api/v1/'
 
 });
