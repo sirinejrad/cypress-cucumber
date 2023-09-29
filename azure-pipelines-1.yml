@@ -21,6 +21,9 @@ steps:
     script: 'npm install '
 - task: CmdLine@2
   inputs:
+    script: 'node MERN-Gmail-clone-main\server\index.js'
+- task: CmdLine@2
+  inputs:
     script: 'npx cypress run -p 3200'
 
 #- script: |
